@@ -33,7 +33,7 @@ $(document).ready(function () {
     //     })
     // })
 
-    var players = ['Dak Prescott', 'Phillip Rivers', 'Patrick Mahomes', 'Tyreek Hill', 'Ezekiel Elliot', 'Josh Norman'];
+    var players = ['Dak Prescott', 'Phillip Rivers', 'Ezekiel Elliot', 'Josh Norman', 'Tyreek Hill', 'Patrick Mahomes'];
 
     function showGifs() {
 
