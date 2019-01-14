@@ -69,6 +69,8 @@ $(document).ready(function () {
                 gifDiv.append(p);
                 gifDiv.append(playerImage);
 
+                $('.lead').addClass('hidden')
+
                 $('#gifs-here').append(gifDiv);
             }
         })
@@ -100,11 +102,12 @@ $(document).ready(function () {
         players.push(player);
 
         renderButtons();
+
+        
     });
 
     $(document).on('click', '.football-players', showGifs);
 
     renderButtons();
-
 
 });
