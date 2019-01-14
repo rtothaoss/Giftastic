@@ -69,7 +69,7 @@ $(document).ready(function () {
                 gifDiv.append(p);
                 gifDiv.append(playerImage);
 
-                $('.lead').addClass('hidden')
+                // $('.lead').addClass('hidden')
 
                 $('#gifs-here').append(gifDiv);
             }
