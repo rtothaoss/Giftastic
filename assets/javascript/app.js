@@ -13,15 +13,15 @@ $(document).ready(function () {
         $.ajax({
             url: queryURL,
             method: 'GET'
-        }).then(function(response){
-            
+        }).then(function (response) {
+
             var results = response.data;
 
             console.log(response);
             console.log(results);
 
-            for(var i = 0; i < results.length; i++) {
-                
+            for (var i = 0; i < results.length; i++) {
+
                 var gifDiv = $('<div>');
 
                 gifDiv.addClass('football-gifs');
@@ -45,13 +45,13 @@ $(document).ready(function () {
                 $('#gifs-here').append(gifDiv);
 
             }
-            
-            $('.gif').on('click', function() {
+
+            $('.gif').on('click', function () {
 
                 var state = $(this).attr('data-state');
-        
+
                 var gifButton = $(this);
-        
+
                 if (state === 'still') {
                     gifButton.attr('src', gifButton.attr('data-animate'));
                     gifButton.attr('data-state', 'animate')
@@ -59,7 +59,7 @@ $(document).ready(function () {
                     gifButton.attr('src', gifButton.attr('data-still'));
                     gifButton.attr('data-state', 'still')
                 };
-        
+
             });
 
         })
@@ -69,9 +69,9 @@ $(document).ready(function () {
     function renderButtons() {
         $('.player-container').empty();
 
-        for( var j = 0; j < players.length; j++) {
+        for (var j = 0; j < players.length; j++) {
             var newButton = $('<button type=button class="btn btn-primary">');
-            
+
             newButton.addClass('football-players')
 
             newButton.attr('data-person', players[j])
@@ -83,16 +83,21 @@ $(document).ready(function () {
         };
     }
 
-    $('#add-player').on('click', function(event) {
+    $('#add-player').on('click', function (event) {
         event.preventDefault();
 
         var player = $('#player-input').val();
 
-        players.push(player);
+        if (player === '') {
+            return
+        } else {
+            players.push(player);
+            $('#player-input').val('');
+        }
 
         renderButtons();
 
-        
+
     });
 
 
