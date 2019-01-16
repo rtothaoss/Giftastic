@@ -19,6 +19,7 @@ body {
     background: purple;
     margin-top: 20px;
     color: white;
+    border: 5px solid white;
 }
 
 p {
@@ -28,6 +29,10 @@ p {
 button {
     font-family: 'Montserrat', sans-serif;
     
+}
+
+.gif {
+    border: 5px solid white;
 }
 
 @media screen and (max-width: 640px) {
