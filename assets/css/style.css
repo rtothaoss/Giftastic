@@ -10,3 +10,13 @@ div.football-gifs {
 .hidden {
     display: none;
 }
+
+body {
+    background-image: url('../images/539921-PJX46F-885.jpg')
+}
+
+.jumbotron {
+    background: purple;
+    margin-top: 20px;
+    color: white;
+}
