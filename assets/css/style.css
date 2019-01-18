@@ -12,14 +12,16 @@ div.football-gifs {
 }
 
 body {
-    background-image: url('../images/539921-PJX46F-885.jpg')
+    background-image: url('../images/1920244.jpg')
 }
 
 .jumbotron {
-    background: purple;
+    /* background: purple; */
+    background: rgb(72, 51, 148);
     margin-top: 20px;
     color: white;
     border: 5px solid white;
+    
 }
 
 p {
