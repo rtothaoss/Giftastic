@@ -1,4 +1,5 @@
 # Giftastic
+Deployed Page: https://rtothaoss.github.io/Giftastic/
 
 This page will display gif's of football players through the use of the giphy API.
 
