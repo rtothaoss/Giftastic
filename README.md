@@ -6,8 +6,8 @@ Deployed Page: https://rtothaoss.github.io/Giftastic/
 ### Technologies Used: 
 * Giphy API
 * AJAX 
-*Javascript
-*jQuery
+* Javascript
+* jQuery
 
 ### Description:
 
